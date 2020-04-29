@@ -44,6 +44,7 @@ def betat(args):
 
                 latitude.append(lat)
                 longitude.append(long)
+                cache.update({address: (lat, long)})
             else:
                 latitude.append(cache[address][0])
                 longitude.append(cache[address][1])
